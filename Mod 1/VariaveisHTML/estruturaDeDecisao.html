@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EstruturaDeDecisao</title>
+  </head>
+  <body>
+    <script>
+      // if/else: estrutra principal de decisao na progrmacao que pode ser executada atravez de um fluxo grama que ira definir a utilizacao do codigo
+      //pode usar outros dentro dele mesmo, o que nos ajuda com o controle de fluxo da nossa logica.
+      //para a aplicação abaixo temos uma expressão onde a>b gera um resultado se ele for verdadeiro, se falso o mesmo retorno outro valor, indicando que ele é menor que o valor indicado.
+
+      var a = 40;
+      var b = 40;
+
+      if (a > b) {
+        console.log('a maior que b');
+      } else if (a < b) {
+        console.log('a não é maior que b');
+      } else {
+        console.log('a é igual a b');
+      }
+
+      var c = 40;
+      var d = 50;
+      if (c >= d) {
+        console.log('c é maior ou igual a d');
+      }
+      if (c <= d) {
+        console.log('c é menor ou igual a d');
+      }
+
+      //para a situação abaixo se vc utilizar apenas == você tera o resultado impresso normal, quando usado
+      // os === vc pode notar que o mesmo não via imprimir o valor por que o valor de G deixa de ser
+      //uma variavel tipo number e passa ser string e por conta disso ele não le os valors e sim o tipo de dados.
+
+      var f = 10;
+      var g = '10';
+      if (f == g) {
+        console.log('f é igual a g');
+      }
+    </script>
+  </body>
+</html>
