@@ -1,0 +1,13 @@
+body {
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: lightgray;
+}
+
+button {
+  cursor: pointer;
+}
+
+.numbers {
+  background-color: yellow;
+}
