@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teste-Pratico 01</title>
+  </head>
+  <body>
+    <script>
+      /*O aluno deverá criar uma função que informará a soma de todos os múltiplos de 3 ou 5 menores
+      que determinado número. Essa função deverá ser criada dentro da tag “script” de um arquivo HTML
+      O programa deverá receber um número como parâmetro, e realizar a soma de todos os múltiplos
+      de 3 ou 5 menores que o número informado. Ao chamar o programa, ele deve imprimir no console do Google Chrome a soma encontrada.*/
+
+      function somaMultiplos(numero) {
+        let soma = 0;
+        for (let i = 0; i < numero; i++) {
+          if (i % 3 === 0 || i % 5 === 0) {
+            soma += i;
+          }
+        }
+        return soma;
+      }
+
+      /*Explicação:
+A função somaMultiplos recebe um número numero como parâmetro.
+Inicializamos a variável *SOMA* com o valor zero, que será utilizada para armazenar a soma dos múltiplos.
+
+Usamos um loop *FOR* para percorrer todos os números menores que *NUMERO*.
+
+Dentro do loop, verificamos se o número atual *i* é um múltiplo de 3 ou 5 usando o operador *%* (módulo), que retorna o resto da divisão entre *i* e 3 ou 5. 
+
+Se o resto for zero, isso significa que *i* é um múltiplo de 3 ou 5.
+
+Se i for um múltiplo de 3 ou 5, adicionamos seu valor à variável soma.
+
+Finalmente, retornamos o valor de soma.
+
+Você pode chamar a função somaMultiplos com um número como argumento para obter a soma de todos os múltiplos de 3 ou 5 menores que esse número.*/
+    </script>
+  </body>
+</html>
