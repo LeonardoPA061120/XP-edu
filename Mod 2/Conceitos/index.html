@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./index.css" />
+
+    <title>conceitos HTML</title>
+  </head>
+  <body>
+    <header>
+
+      <a id="Top-of-page"></a>
+      <h1>Conceitos HTML</h1>
+    </header>
+
+    <main>
+      <!-- H1 e sequencias definem o tamanho dos textos que podemos ter em nossa pagina-->
+      <h1>Texto H1</h1>
+      <h2>Texto h2</h2>
+      <h3>Texto h3</h3>
+      <h4>Texto h4</h4>
+      <h5>Texto h5</h5>
+      <h6>Texto h6</h6>
+      <a id="after-h6"></a>
+
+      <!-- P define os paragrafos dentros da pagina-->
+      <p>Exemplo de paragrafo 1</p>
+      <p>Exemplo de paragrafo 2</p>
+      <p>Exemplo de paragrafo 3</p>
+
+      <!--OL (Lista Ordenada)  UL (lista desordenada)-->
+      <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+      </ol>
+
+      <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+      </ul>
+
+      <!--Montando uma tabela com as tags -->
+
+      <!--A tag utilizada para criar uma tabela HTML (Table)
+        O elemento HTML caption especifica a legenda (ou título) de uma tabela      O marcador <THEAD></THEAD> "Table Head Element" ou linha de cabeçalho de uma tabela HTML, é utilizado para destacar os títulos das colunas de uma tabela.
+      
+        - O marcador <THEAD></THEAD> "Table Head Element" ou linha de cabeçalho de uma tabela HTML, é utilizado para destacar os títulos das colunas de uma tabela.
+        - TR define uma linha numa tabela. A tabela terá exactamente um número de linhas igual ao número de tags TR encontradas. TD significa "Table Data" e define cada uma das células da tabela.
+        - O elemento HTML <th> define uma célula cabeçalho do grupo de células de sua tabela. A exatidão natural deste grupo é definida pelos atributos scope e headers .
+        - O marcador <TBODY></TBODY> "Table Body Element" é o espaço onde são colocadas as linhas dos detalhes, de dados, em uma tabela HTML, é indicação para o navegador que essas linhas aparecerão depois das células contidas na tag <THEAD></THEAD> e antes das células contidas na tag <TFOOT></TFOOT>.
+        - A tag <td> cria uma coluna para inserção de conteúdos, junto a diversas outras colunas em uma mesma linha (definida pela tag <tr> ), dentro do bloco de uma tabela (definida pela tag <table> ). As tags <td> precisam sempre estar dentro de tags <tr> , que por sua vez precisam estar sempre dentro de uma tag <table> .
+        - O marcador <TFOOT></TFOOT> "Table Foot Element" ou linha de resumo, somatórias de colunas, etc., de uma tabela HTML, é indicação para o navegador que essa linha é a última de uma tabela.          -
+        - O elemento <figure>Sua finalidade é para marcar diagramas, ilustrações, fotos, e fragmentos de código (entre outros conteúdos)
+        - O Elemento HTML Figcaption ( <figcaption> ) representa uma legenda ou uma legenda associada com uma figura ou ilustração descrita pelo resto dos dados do elemento <figure> que seu elemento pai.-->
+      
+          <table>
+        <caption>
+          Tecnologias WEB
+        </caption>
+        <thead>
+          <tr>
+            <th>Tipo</th>
+            <th>Descrição</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>HTML</td>
+            <td>Hyper Text Markup Language</td>
+          </tr>
+
+          <tr>
+            <td>CSS</td>
+            <td>Cascading Style Sheet</td>
+          </tr>
+
+          <tr>
+            <td>JavaScript</td>
+            <td>Tambem conhecido como ECMAScript</td>
+          </tr>
+        </tbody>
+
+        <tfoot>
+          <tr>
+            <td>Total de Tecnologias</td>
+          </tr>
+        </tfoot>
+      </table>
+
+      <figure>
+        <figcaption>Cachorro aleatorio</figcaption>
+        <img width="300" src="./DOG.jpg" alt="Cachorro aleatorio" />
+      </figure>
+
+
+      <!--Div coloca elementos um ebaixo do outro-->
+      <p>
+        <div>Exemplo de div1</div>
+        <div>Exemplo de div2</div>
+      </p>
+      
+      <p>
+        <span>Exemplo de div1</span>
+        <span>Exemplo de div2</span>
+      </p>
+
+      <p>  
+        <a href="#after-h6">Voltar ao topo da pagina</a>
+      </p>
+      <p>
+        <a href="./conteudo.html">Ir para conteudo</a>
+      </p>
+      <p>
+        <a href="https://www.google.com.br">Ir para o google</a>
+      </p>
+
+
+      <button>Clique aqui</button>
+
+
+      <p>
+        <input type="text">
+      </p>
+
+    </main>
+
+    <script defer src="./script.JS"></script>
+  </body>
+</html>
