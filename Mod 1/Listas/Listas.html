@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="PT-Br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Listas</title>
+  </head>
+  <body>
+    <script>
+      // Listas , também chamdas de arrays ou vetores, as listas são como variaveis e podemos armazenar diferentes tipos de dados dentro dela podendo ser:
+      //elementos logicos, textos, variaveis, o operador chamado para abrir uma lista seria [].
+      //dentro do console no navegodor você pode encontrar os operadores de forma individual,
+      //solicitando atravez da var...["o numero que vc deseja"]
+
+      var carros = ['Gol', 'Palio', 'Uno'];
+      console.log(carros);
+
+      var primeiroCarro = carros[0];
+      var segundoCarro = carros[1];
+      var terceiroCarro = carros[2];
+
+      console.log('primeira posicao: ' + primeiroCarro);
+      console.log('segunda posicao: ' + segundoCarro);
+      console.log('terceira posicao: ' + terceiroCarro);
+
+      // Voce não precisa jogar dentro de uma variavel para alterar um elemento da lista, pode alterar diretamente pelo indice
+      carros[2] = 'argo';
+      console.log(carros[2]);
+
+      //o elemento .length é usado para manipulação de uma sequencia em todos os tipos de dados da sequencia; BIT, BLOB e CHARACTER) e retorna um valor inteiro fornecendo o número de singletons em source_string.
+      console.log('tamanho do array: ' + carros.length);
+      console.log(' ultimo elemento do array: ' + carros[carros.length - 1]);
+
+      //pode cadastras elementos na lista diretamente pelo inidice, sem necessidade de alterar.
+      carros[3] = 'sandero';
+      console.log(' ultimo elemento do array: ' + carros[carros.length - 1]);
+
+      carros[carros.length] = 'civic';
+      console.log(' ultimo elemento do array: ' + carros[carros.length - 1]);
+
+      //outro metodo de acessar as funções é utilizando o  .push
+      carros.push('polo');
+      console.log(carros);
+
+      //a função .pop remove o ultimo elemento da sua lista caso haja uma necessidade de alterar o dado
+      console.log(carros.pop());
+      console.log(carros);
+
+      // caso queira inserir elementos no inicio da lista você pode usar o  .unshift
+      carros.unshift('jetta');
+      console.log(carros);
+
+      //caso queira remover o primerio elemento usar .shift
+      console.log(carros.shift());
+      console.log(carros);
+    </script>
+  </body>
+</html>
