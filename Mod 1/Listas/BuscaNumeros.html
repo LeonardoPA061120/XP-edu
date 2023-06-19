@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Busca-Numeros</title>
+  </head>
+  <body>
+    <script>
+      // 1- Receber um numero como um parametro
+      // 2- Executar um for para na lista e para cada elemento verificar se é igual ao numero buscado.
+      // 3- Quando encontrado o numero, interronper a execucao e retonrar true
+      // 4- Se chegar ate o fim sem encontrar, retornar false;
+
+      var lista = [19, 54, 18, 11, 47, 98, 36, 44, 87];
+
+      function verificaNumero(numero) {
+        //Criado uma variavel boolean para mostrar que pode ser feito uma logica para achar o valor se ele é verdadeiro continua a executar o codigo apresenta TRUE
+        //se ele não achar dentro do FOR o codigo para de ser executado e apresenta o resultado FALSE.
+        var existe = false;
+        for (var i = 0; i < lista.length; i++) {
+          console.log(i);
+          if (lista[i] === numero) {
+            existe = true;
+            break;
+            //Comando BREAK usado para a estrutura a qual ele seja aplicado, seja para uma WHILE ou FOR
+          }
+        }
+        return existe;
+      }
+    </script>
+  </body>
+</html>
