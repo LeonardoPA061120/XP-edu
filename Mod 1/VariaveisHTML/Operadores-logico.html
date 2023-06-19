@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="PT-Br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LógicaBooleana</title>
+  </head>
+  <body>
+    <script>
+      //Logica utiliza os operadores que retornam os seguintes valores True or False, com base em uma tabela(tabela Verdade).
+      //tipos de operadores boleanos AND (&&), OR(||), NOT(!).
+      var HojeFezCalor = false;
+      var OntemFezCalor = true;
+
+      if (HojeFezCalor && OntemFezCalor) {
+        console.log('Fez calor ontem e hoje');
+      }
+      if (HojeFezCalor || OntemFezCalor) {
+        console.log('fez calor ontem ou hoje');
+      }
+      if (!HojeFezCalor) {
+        console.log('hoje não fez calor');
+      }
+      if (!OntemFezCalor) {
+        console.log('ontem não fez calor');
+      }
+    </script>
+  </body>
+</html>
